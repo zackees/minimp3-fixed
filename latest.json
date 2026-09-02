@@ -1,0 +1,623 @@
+{
+ "absolute_summaries": [
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-hecommon",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 123.24,
+    "median": 123.24,
+    "min": 123.24,
+    "noisy": false,
+    "q1": 123.24,
+    "q3": 123.24,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-compl",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 114.63,
+    "median": 114.63,
+    "min": 114.63,
+    "noisy": false,
+    "q1": 114.63,
+    "q3": 114.63,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-si",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 107.43,
+    "median": 107.43,
+    "min": 107.43,
+    "noisy": false,
+    "q1": 107.43,
+    "q3": 107.43,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-nonstandard-he_44_48khz",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 132.27,
+    "median": 132.27,
+    "min": 132.27,
+    "noisy": false,
+    "q1": 132.27,
+    "q3": 132.27,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-hecommon",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 123.64,
+    "median": 123.64,
+    "min": 123.64,
+    "noisy": false,
+    "q1": 123.64,
+    "q3": 123.64,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-compl",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 120.84,
+    "median": 120.84,
+    "min": 120.84,
+    "noisy": false,
+    "q1": 120.84,
+    "q3": 120.84,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-si",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 107.76,
+    "median": 107.76,
+    "min": 107.76,
+    "noisy": false,
+    "q1": 107.76,
+    "q3": 107.76,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "higher-is-better",
+   "metric_id": "accuracy-psnr-db",
+   "scenario_id": "l3-nonstandard-he_44_48khz",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 132.42,
+    "median": 132.42,
+    "min": 132.42,
+    "noisy": false,
+    "q1": 132.42,
+    "q3": 132.42,
+    "relative_iqr": 0.0
+   },
+   "target": "any"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "code-size-text-bytes",
+   "scenario_id": "decoder",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 42496,
+    "median": 42496,
+    "min": 42496,
+    "noisy": false,
+    "q1": 42496,
+    "q3": 42496,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-hecommon",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 15288555,
+    "median": 15288555,
+    "min": 15288555,
+    "noisy": false,
+    "q1": 15288555,
+    "q3": 15288555,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-compl",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 58240889,
+    "median": 58240889,
+    "min": 58240889,
+    "noisy": false,
+    "q1": 58240889,
+    "q3": 58240889,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-si",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 31074355,
+    "median": 31074355,
+    "min": 31074355,
+    "noisy": false,
+    "q1": 31074355,
+    "q3": 31074355,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-nonstandard-he_44_48khz",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 141440245,
+    "median": 141440245,
+    "min": 141440245,
+    "noisy": false,
+    "q1": 141440245,
+    "q3": 141440245,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "corpus",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 246044044,
+    "median": 246044044,
+    "min": 246044044,
+    "noisy": false,
+    "q1": 246044044,
+    "q3": 246044044,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "code-size-text-bytes",
+   "scenario_id": "decoder",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 37344,
+    "median": 37344,
+    "min": 37344,
+    "noisy": false,
+    "q1": 37344,
+    "q3": 37344,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-hecommon",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 14556142,
+    "median": 14556142,
+    "min": 14556142,
+    "noisy": false,
+    "q1": 14556142,
+    "q3": 14556142,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-compl",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 72728990,
+    "median": 72728990,
+    "min": 72728990,
+    "noisy": false,
+    "q1": 72728990,
+    "q3": 72728990,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-si",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 39426623,
+    "median": 39426623,
+    "min": 39426623,
+    "noisy": false,
+    "q1": 39426623,
+    "q3": 39426623,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-nonstandard-he_44_48khz",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 186209184,
+    "median": 186209184,
+    "min": 186209184,
+    "noisy": false,
+    "q1": 186209184,
+    "q3": 186209184,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "corpus",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 312920939,
+    "median": 312920939,
+    "min": 312920939,
+    "noisy": false,
+    "q1": 312920939,
+    "q3": 312920939,
+    "relative_iqr": 0.0
+   },
+   "target": "arm"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "code-size-text-bytes",
+   "scenario_id": "decoder",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 50808,
+    "median": 50808,
+    "min": 50808,
+    "noisy": false,
+    "q1": 50808,
+    "q3": 50808,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-hecommon",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 23918711,
+    "median": 23918711,
+    "min": 23918711,
+    "noisy": false,
+    "q1": 23918711,
+    "q3": 23918711,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-compl",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 89402610,
+    "median": 89402610,
+    "min": 89402610,
+    "noisy": false,
+    "q1": 89402610,
+    "q3": 89402610,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-si",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 47754904,
+    "median": 47754904,
+    "min": 47754904,
+    "noisy": false,
+    "q1": 47754904,
+    "q3": 47754904,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-nonstandard-he_44_48khz",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 223582404,
+    "median": 223582404,
+    "min": 223582404,
+    "noisy": false,
+    "q1": 223582404,
+    "q3": 223582404,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-fixed",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "corpus",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 384658629,
+    "median": 384658629,
+    "min": 384658629,
+    "noisy": false,
+    "q1": 384658629,
+    "q3": 384658629,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "code-size-text-bytes",
+   "scenario_id": "decoder",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 43542,
+    "median": 43542,
+    "min": 43542,
+    "noisy": false,
+    "q1": 43542,
+    "q3": 43542,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-hecommon",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 14545720,
+    "median": 14545720,
+    "min": 14545720,
+    "noisy": false,
+    "q1": 14545720,
+    "q3": 14545720,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-compl",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 73219108,
+    "median": 73219108,
+    "min": 73219108,
+    "noisy": false,
+    "q1": 73219108,
+    "q3": 73219108,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-si",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 39724646,
+    "median": 39724646,
+    "min": 39724646,
+    "noisy": false,
+    "q1": 39724646,
+    "q3": 39724646,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "l3-nonstandard-he_44_48khz",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 187553023,
+    "median": 187553023,
+    "min": 187553023,
+    "noisy": false,
+    "q1": 187553023,
+    "q3": 187553023,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  },
+  {
+   "decoder_id": "minimp3-float",
+   "direction": "lower-is-better",
+   "metric_id": "opcount-instructions",
+   "scenario_id": "corpus",
+   "summary": {
+    "count": 1,
+    "exact": true,
+    "iqr": 0.0,
+    "max": 315042497,
+    "median": 315042497,
+    "min": 315042497,
+    "noisy": false,
+    "q1": 315042497,
+    "q3": 315042497,
+    "relative_iqr": 0.0
+   },
+   "target": "riscv32"
+  }
+ ],
+ "generated_utc": "2026-09-02T07:17:01Z",
+ "notes": [],
+ "provenance": {
+  "commit": "069babf24b0fa09c6555e81cfed6b3c288112a4b",
+  "commit_short": "069babf",
+  "host_arch": "x86_64",
+  "host_system": "Linux",
+  "python": "3.13.15",
+  "subject": "Benchmarks: exact opcount and accuracy, published to a Pages branch"
+ },
+ "schema": "minimp3-fixed/benchmark/1"
+}

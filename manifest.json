@@ -1,0 +1,74 @@
+{
+ "files": [
+  {
+   "media_type": "application/octet-stream",
+   "path": ".nojekyll",
+   "role": "github-pages-marker",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "size": 0
+  },
+  {
+   "media_type": "image/svg+xml",
+   "path": "benchmark-accuracy.svg",
+   "role": "accuracy-panel",
+   "sha256": "42fc6a83eac6748868134a2e0b7539953a4c14d0d171ab77afa679ac0fdcd7ce",
+   "size": 3777
+  },
+  {
+   "media_type": "image/svg+xml",
+   "path": "benchmark-history.svg",
+   "role": "history-chart",
+   "sha256": "a9dbd7ebcd5209570107fb91b8d799a3fb6690187da79bb311af793b3297911f",
+   "size": 2005
+  },
+  {
+   "media_type": "image/svg+xml",
+   "path": "benchmark-opcount-arm.svg",
+   "role": "opcount-panel-arm",
+   "sha256": "057e6e93192bb24e30a96b5b6afffcb3705d42c7e651040ae93762e8132e32b9",
+   "size": 4153
+  },
+  {
+   "media_type": "image/svg+xml",
+   "path": "benchmark-opcount-riscv32.svg",
+   "role": "opcount-panel-riscv32",
+   "sha256": "9f0b3531a37a18db85ba8476be42b29c577891362f1b1b9e59c5ae2c4e59971e",
+   "size": 4161
+  },
+  {
+   "media_type": "image/svg+xml",
+   "path": "benchmark-size-arm.svg",
+   "role": "size-panel-arm",
+   "sha256": "6353e3288710a2d4750afc4d5eded7e18626e4227affcd84de433e4595a8cac8",
+   "size": 2239
+  },
+  {
+   "media_type": "image/svg+xml",
+   "path": "benchmark-size-riscv32.svg",
+   "role": "size-panel-riscv32",
+   "sha256": "382af8ba3760dea29d8393b9ff130909de5ce10470ef647370002839bfb3ec4b",
+   "size": 2247
+  },
+  {
+   "media_type": "application/octet-stream",
+   "path": "history.jsonl",
+   "role": "publication-history",
+   "sha256": "a96035cf756f2b687200b26fdd38bd6d006d4c67be755f7008f66d40e98e1f04",
+   "size": 21320
+  },
+  {
+   "media_type": "text/html",
+   "path": "index.html",
+   "role": "dashboard",
+   "sha256": "fff2e511ccf67a7e87efd2ae9d8b85bc1b9c1b2f180673c147bc0cdc6715a6b9",
+   "size": 2780
+  },
+  {
+   "media_type": "application/json",
+   "path": "latest.json",
+   "role": "publication-envelope",
+   "sha256": "0d7b8c792c4e7e6596ce8f2149f9b667e56e7f7a29bb8a80f33b0e0c9729acac",
+   "size": 12890
+  }
+ ]
+}

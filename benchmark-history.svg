@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img" aria-label="opcount history">
+
+  <style>
+    .bg   { fill: #ffffff; }
+    .ax   { stroke: #c8c8c8; stroke-width: 1; }
+    .grid { stroke: #ececec; stroke-width: 1; }
+    text  { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif; fill: #24292f; }
+    .title  { font-size: 15px; font-weight: 600; }
+    .sub    { font-size: 11px; fill: #57606a; }
+    .lbl    { font-size: 11.5px; }
+    .val    { font-size: 11px; font-weight: 600; }
+    .ref    { stroke: #d1242f; stroke-width: 1.25; stroke-dasharray: 4 3; }
+    .reftxt { font-size: 10px; fill: #d1242f; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #0d1117; }
+      .ax   { stroke: #30363d; }
+      .grid { stroke: #21262d; }
+      text  { fill: #e6edf3; }
+      .sub  { fill: #8b949e; }
+      .ref    { stroke: #ff7b72; }
+      .reftxt { fill: #ff7b72; }
+    }
+  </style>
+
+<rect class="bg" width="760" height="240"/>
+<text class="title" x="16" y="24">Instruction count over time</text>
+<text class="sub" x="16" y="40">minimp3-fixed, whole corpus, riscv32 &#183; lower is better</text>
+<line class="ax" x1="210" y1="206.0" x2="680" y2="206.0"/>
+<path d="M210.0,126.0 L680.0,126.0" fill="none" stroke="#1f4e79" stroke-width="2"/>
+<circle cx="210.0" cy="126.0" r="3" fill="#1f4e79"><title>1135810: 384,658,629</title></circle>
+<circle cx="680.0" cy="126.0" r="3" fill="#1f4e79"><title>069babf: 384,658,629</title></circle>
+<text class="sub" x="202" y="210.0" text-anchor="end">376,965,456</text>
+<line class="grid" x1="210" y1="206.0" x2="680" y2="206.0"/>
+<text class="sub" x="202" y="50.0" text-anchor="end">392,351,802</text>
+<line class="grid" x1="210" y1="46.0" x2="680" y2="46.0"/>
+<text class="val" x="674.0" y="117.0" text-anchor="end">384,658,629</text>
+<text class="sub" x="210" y="222.0">1135810</text>
+<text class="sub" x="680" y="222.0" text-anchor="end">069babf</text>
+</svg>

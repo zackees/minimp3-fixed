@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-label="Accuracy against the ISO reference">
+
+  <style>
+    .bg   { fill: #ffffff; }
+    .ax   { stroke: #c8c8c8; stroke-width: 1; }
+    .grid { stroke: #ececec; stroke-width: 1; }
+    text  { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif; fill: #24292f; }
+    .title  { font-size: 15px; font-weight: 600; }
+    .sub    { font-size: 11px; fill: #57606a; }
+    .lbl    { font-size: 11.5px; }
+    .val    { font-size: 11px; font-weight: 600; }
+    .ref    { stroke: #d1242f; stroke-width: 1.25; stroke-dasharray: 4 3; }
+    .reftxt { font-size: 10px; fill: #d1242f; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #0d1117; }
+      .ax   { stroke: #30363d; }
+      .grid { stroke: #21262d; }
+      text  { fill: #e6edf3; }
+      .sub  { fill: #8b949e; }
+      .ref    { stroke: #ff7b72; }
+      .reftxt { fill: #ff7b72; }
+    }
+  </style>
+
+<rect class="bg" width="760" height="300"/>
+<text class="title" x="16" y="24">Accuracy against the ISO reference</text>
+<text class="sub" x="16" y="40">PSNR over the decoded signal · higher is better</text>
+<line class="grid" x1="327.5" y1="46" x2="327.5" y2="266.0"/>
+<line class="grid" x1="445.0" y1="46" x2="445.0" y2="266.0"/>
+<line class="grid" x1="562.5" y1="46" x2="562.5" y2="266.0"/>
+<line class="grid" x1="680.0" y1="46" x2="680.0" y2="266.0"/>
+<line class="ax" x1="210" y1="46" x2="210" y2="266.0"/>
+<line class="ref" x1="390.5" y1="40" x2="390.5" y2="266.0"/>
+<text class="reftxt" x="394.5" y="37">ISO floor 60 dB</text>
+<line class="ref" x1="519.4" y1="40" x2="519.4" y2="266.0"/>
+<text class="reftxt" x="523.4" y="37">Helix 102.87 dB</text>
+<text class="lbl" x="202" y="77.5" text-anchor="end">l3-compl</text>
+<rect x="210" y="56.5" width="344.8" height="14.5" fill="#1f4e79" rx="1.5"><title>minimp3-fixed: 114.63 dB</title></rect>
+<text class="val" x="559.8" y="66.5">114.63</text>
+<rect x="210" y="73.5" width="363.5" height="14.5" fill="#7fb3d5" rx="1.5"><title>minimp3-float: 120.84 dB</title></rect>
+<text class="val" x="578.5" y="83.5">120.84</text>
+<text class="lbl" x="202" y="132.5" text-anchor="end">l3-hecommon</text>
+<rect x="210" y="111.5" width="370.7" height="14.5" fill="#1f4e79" rx="1.5"><title>minimp3-fixed: 123.24 dB</title></rect>
+<text class="val" x="585.7" y="121.5">123.24</text>
+<rect x="210" y="128.5" width="371.9" height="14.5" fill="#7fb3d5" rx="1.5"><title>minimp3-float: 123.64 dB</title></rect>
+<text class="val" x="586.9" y="138.5">123.64</text>
+<text class="lbl" x="202" y="187.5" text-anchor="end">l3-nonstandard-he_44_48khz</text>
+<rect x="210" y="166.5" width="397.9" height="14.5" fill="#1f4e79" rx="1.5"><title>minimp3-fixed: 132.27 dB</title></rect>
+<text class="val" x="612.9" y="176.5">132.27</text>
+<rect x="210" y="183.5" width="398.3" height="14.5" fill="#7fb3d5" rx="1.5"><title>minimp3-float: 132.42 dB</title></rect>
+<text class="val" x="613.3" y="193.5">132.42</text>
+<text class="lbl" x="202" y="242.5" text-anchor="end">l3-si</text>
+<rect x="210" y="221.5" width="323.1" height="14.5" fill="#1f4e79" rx="1.5"><title>minimp3-fixed: 107.43 dB</title></rect>
+<text class="val" x="538.1" y="231.5">107.43</text>
+<rect x="210" y="238.5" width="324.1" height="14.5" fill="#7fb3d5" rx="1.5"><title>minimp3-float: 107.76 dB</title></rect>
+<text class="val" x="539.1" y="248.5">107.76</text>
+<rect x="16" y="281" width="10" height="10" fill="#1f4e79" rx="1.5"/>
+<text class="sub" x="31" y="290">fixed point</text>
+<rect x="115" y="281" width="10" height="10" fill="#7fb3d5" rx="1.5"/>
+<text class="sub" x="130" y="290">floating point</text>
+<text class="sub" x="744" y="290" text-anchor="end">dB</text>
+</svg>
