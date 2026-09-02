@@ -191,6 +191,18 @@ def history_chart(path: Path, history: Path, target: str = "riscv32") -> None:
             out.append(f'<circle cx="{sx(i):.1f}" cy="{sy(v):.1f}" r="3" '
                        f'fill="#1f4e79"><title>{esc(label)}: {v:,.0f}</title>'
                        f'</circle>')
+        # Without a y-scale the line is unreadable: a flat series and a
+        # halved one look identical when the axis auto-fits.
+        for level in (lo, hi):
+            out.append(f'<text class="sub" x="{PAD_L - 8}" '
+                       f'y="{sy(level) + 4:.1f}" text-anchor="end">'
+                       f'{level:,.0f}</text>')
+            out.append(f'<line class="grid" x1="{PAD_L}" y1="{sy(level):.1f}" '
+                       f'x2="{PAD_L + px}" y2="{sy(level):.1f}"/>')
+        latest_label = f'{points[-1][1]:,.0f}'
+        out.append(f'<text class="val" x="{sx(len(points) - 1) - 6:.1f}" '
+                   f'y="{sy(points[-1][1]) - 9:.1f}" text-anchor="end">'
+                   f'{latest_label}</text>')
         out.append(f'<text class="sub" x="{PAD_L}" y="{PAD_T + ph + 16:.1f}">'
                    f'{esc(points[0][0])}</text>')
         out.append(f'<text class="sub" x="{PAD_L + px}" '
