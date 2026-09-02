@@ -46,6 +46,59 @@ written out, and are pinned by a codegen test — because the idiom is only fast
 while the compiler recognises it, and when recognition lapses it lapses
 silently: 2 instructions became 40, with the right answer every time.
 
+## Benchmarks
+
+Published on every change to the decoder, from the
+[`benchmark-stats`](https://github.com/zackees/minimp3-fixed/tree/benchmark-stats)
+branch. **[Full dashboard →](https://zackees.github.io/minimp3-fixed/)**
+
+### Accuracy
+
+[![PSNR against the ISO reference for the fixed and floating point builds](https://raw.githubusercontent.com/zackees/minimp3-fixed/benchmark-stats/benchmark-accuracy.svg)](https://zackees.github.io/minimp3-fixed/#accuracy)
+
+The fixed-point build tracks the floating-point one to within a fraction of a
+dB on every vector, roughly 50 dB above the ISO floor and 20 above the Helix
+reference. That is the claim "no accuracy was spent" as a picture: none of the
+speed work moved these bars.
+
+### Instructions executed
+
+[![Instructions executed on riscv32](https://raw.githubusercontent.com/zackees/minimp3-fixed/benchmark-stats/benchmark-opcount-riscv32.svg)](https://zackees.github.io/minimp3-fixed/#opcount)
+
+[![Instructions executed on arm](https://raw.githubusercontent.com/zackees/minimp3-fixed/benchmark-stats/benchmark-opcount-arm.svg)](https://zackees.github.io/minimp3-fixed/#opcount)
+
+Guest instructions actually executed on the target ISA, counted by a QEMU TCG
+plugin ([`tools/qemu-plugin/opcount.c`](tools/qemu-plugin/opcount.c)). This is
+the metric this repository optimises against, and it is **exact**: the same
+binary on the same input returns the same count on any machine, every time. A
+0.5% move is a real 0.5%, not something to average over fifteen runs.
+
+The fixed-point build executes more instructions than the float build, which is
+the expected trade and the entire point — the targets it ships to have no FPU,
+so the float build's instruction count is not available to them at any price.
+
+### Code size
+
+[![Decoder .text size on riscv32](https://raw.githubusercontent.com/zackees/minimp3-fixed/benchmark-stats/benchmark-size-riscv32.svg)](https://zackees.github.io/minimp3-fixed/#size)
+
+### History
+
+[![Instruction count over published runs](https://raw.githubusercontent.com/zackees/minimp3-fixed/benchmark-stats/benchmark-history.svg)](https://zackees.github.io/minimp3-fixed/#history)
+
+Every published run is appended to
+[`history.jsonl`](https://zackees.github.io/minimp3-fixed/history.jsonl); the most recent is
+[`latest.json`](https://zackees.github.io/minimp3-fixed/latest.json), and
+[`manifest.json`](https://zackees.github.io/minimp3-fixed/manifest.json) carries a sha256 for every artifact so
+a chart can be tied back to the envelope that produced it.
+
+### What these can and cannot tell you
+
+They rank candidates. They do not predict hardware time: an instruction count
+knows nothing about the target's cache, pipeline or multiplier latency, and
+wall clock under `qemu-user` measures the JIT rather than the guest. Timing on
+real silicon stays in FastLED. See the doctrine section below for the four
+occasions when a host measurement got the sign or the magnitude wrong.
+
 ## Correctness
 
 83 conformance bitstreams ship in [`vectors/`](vectors/) with the fork.
